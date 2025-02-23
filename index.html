@@ -6,7 +6,31 @@
     <link href="./static/output.css" rel="stylesheet">
     <title>Jacob Roe</title>
 </head>
-<body>
-    <div class="flex flex-auto"></div>
+<body class="bg-mainblack text-white font-serif">
+    <!-- CONTENT CONTAINER -->
+    <nav class="fixed mt-0 top-0 z-50 w-full border-b-2 border-stone-900 h-14">
+        <div class="w-full h-full mx-auto flex flex-row-reverse max-w-screen-lg gap-6 p-4">
+            <a>Contact</a>
+            <a>Projects</a>
+            <a>About Me</a>
+        </div>
+    </nav>
+    <div class="relative flex flex-col items-center">
+
+        <!-- NAV -->
+        
+
+        <section class="w-full h-screen max-w-screen-lg flex">
+            <div class="w-3/4 m-auto flex flex-col">
+                <div class="text-center">Hey, I'm Jacob - a CS student with a passion for fnbr and deadlock</div>
+                <div class="py-5 flex flex-row mx-auto gap-6">
+                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold">About me</button>
+                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold">Projects</button>
+                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold">Contact</button>
+                </div>
+            </div>
+        </section>
+        <div class="w-full max-w-screen-lg border-white border-b-2"></div>
+    </div>
 </body>
 </html>
