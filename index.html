@@ -6,13 +6,14 @@
     <link href="./static/output.css" rel="stylesheet">
     <title>Jacob Roe</title>
 </head>
+<script src="./scripts/script.js"></script>
 <body class="bg-mainblack text-white font-serif">
     <!-- CONTENT CONTAINER -->
-    <nav class="fixed mt-0 top-0 z-50 w-full border-b-2 border-stone-900 h-14">
+    <nav class="fixed mt-0 top-0 z-50 w-full border-b-2 border-stone-900 h-14  backdrop-blur-sm">
         <div class="w-full h-full mx-auto flex flex-row-reverse max-w-screen-lg gap-6 p-4">
-            <a>Contact</a>
-            <a>Projects</a>
-            <a>About Me</a>
+            <a onclick="scrollToSection('contact')">Contact</a>
+            <a onclick="scrollToSection('aboutme')">About Me</a>
+            <a onclick="scrollToSection('projects')">Projects</a>
         </div>
     </nav>
     <div class="relative flex flex-col items-center">
@@ -22,15 +23,40 @@
 
         <section class="w-full h-screen max-w-screen-lg flex">
             <div class="w-3/4 m-auto flex flex-col">
-                <div class="text-center">Hey, I'm Jacob - a CS student with a passion for fnbr and deadlock</div>
+                <div class="text-center text-lg">Hey, I'm Jacob - a CS student with a passion for fnbr and deadlock</div>
                 <div class="py-5 flex flex-row mx-auto gap-6">
-                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold">About me</button>
-                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold">Projects</button>
-                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold">Contact</button>
+                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold" onclick="scrollToSection('projects')">Projects</button>
+                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold" onclick="scrollToSection('aboutme')">About me</button>
+                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold" onclick="scrollToSection('contact')">Contact</button>
                 </div>
             </div>
         </section>
+
         <div class="w-full max-w-screen-lg border-white border-b-2"></div>
+        <section id="projects" class="w-full h-screen max-w-screen-lg flex flex-col p-4">
+            <h1 class="text-4xl mx-auto">Projects</h1>
+            <div class="flex flex-col sm:flex-row my-10 bg-black/30">
+                <img  class="object-cover w-full sm:w-[400px] h-auto sm:h-[250px] p-2" src="https://cdn.discordapp.com/attachments/803732312377655346/1342572821800288366/image.png?ex=67bc1a20&is=67bac8a0&hm=cffa4bc04bc9353e09da86713450c697104643b2e06c5c422f9107f8a6e2476b&">
+                <p>FORTNITE GAMIGN</p>
+            </div>
+        </section>
+
+        <div class="w-full max-w-screen-lg border-white border-b-2"></div>
+        <section id="aboutme" class="w-full h-fit max-w-screen-lg flex flex-col p-4">
+            <h1 class="text-4xl mx-auto">About Me</h1>
+            <div class="flex flex-col sm:flex-row-reverse gap-4 my-10 "> 
+                <img class="mx-auto object-contain size-80 border-white border-2" src="./static/images/me.png">
+                <div class="flex flex-col gap-4 mx-auto">
+                    <p class="text-center sm:text-left">Hey, I'm Jacob! I'm a third year computer science student specializing in software design at Queen's University with a passion for networking, backend systems, and game development.</p>
+                    <p class="text-center sm:text-left">Right now, I'm learning about network layers and all of the underlying protocols that make the internet go round. Im taking on related projects like a DNS resolver in Go to solidify my understanding of different principles and protocols.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="w-full max-w-screen-lg border-white border-b-2"></div>
+        <section id="contact" class="w-full h-screen max-w-screen-lg flex flex-col p-4">
+            <h1 class="text-4xl mx-auto">Contact</h1>
+        </section>
     </div>
 </body>
 </html>
