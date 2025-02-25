@@ -9,25 +9,24 @@
 <script src="./scripts/script.js"></script>
 <body class="bg-mainblack text-white font-serif">
     <!-- CONTENT CONTAINER -->
-    <nav class="fixed mt-0 top-0 z-50 w-full border-b-2 border-stone-900 h-14  backdrop-blur-sm">
+    <nav class="fixed mt-0 top-0 z-50 w-full  h-14  backdrop-blur-sm">
         <div class="w-full h-full mx-auto flex flex-row-reverse max-w-screen-lg gap-6 p-4">
-            <a onclick="scrollToSection('contact')">Contact</a>
-            <a onclick="scrollToSection('aboutme')">About Me</a>
-            <a onclick="scrollToSection('projects')">Projects</a>
+            <a href="./static/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a class="hover:cursor-pointer" onclick="scrollToSection('contact')">Contact</a>
+            <a class="hover:cursor-pointer" onclick="scrollToSection('aboutme')">About</a>
+            <a class="hover:cursor-pointer" onclick="scrollToSection('projects')">Projects</a>
         </div>
     </nav>
     <div class="relative flex flex-col items-center">
-
         <!-- NAV -->
-        
-
         <section class="w-full h-screen max-w-screen-lg flex">
             <div class="w-3/4 m-auto flex flex-col">
-                <div class="text-center text-lg">Hey, I'm Jacob - a CS student with a passion for fnbr and deadlock</div>
-                <div class="py-5 flex flex-row mx-auto gap-6">
-                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold" onclick="scrollToSection('projects')">Projects</button>
-                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold" onclick="scrollToSection('aboutme')">About me</button>
-                    <button class="px-4 py-2 bg-white text-stone-950 font-semibold" onclick="scrollToSection('contact')">Contact</button>
+                <div class="text-center text-2xl">Hey, I'm Jacob - a CS student with a passion for fnbr and deadlock</div>
+                <div class="py-5 flex flex-row mx-auto gap-2">
+                    <button class="px-3 py-2 bg-white text-stone-950 font-semibold hover:bg-gray-300 hover:cursor-pointer " onclick="scrollToSection('projects')">Projects</button>
+                    <button class="px-3 py-2 bg-white text-stone-950 font-semibold hover:bg-gray-300 hover:cursor-pointer " onclick="scrollToSection('aboutme')">About</button>
+                    <button class="px-3 py-2 bg-white text-stone-950 font-semibold hover:bg-gray-300 hover:cursor-pointer " onclick="scrollToSection('contact')">Contact</button>
+                    <a      class="px-3 py-2 bg-white text-stone-950 font-semibold hover:bg-gray-300 hover:cursor-pointer " href="./static/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 </div>
             </div>
         </section>
@@ -35,54 +34,7 @@
         <div class="w-full max-w-screen-lg border-white border-b-2"></div>
         <section id="projects" class="w-full h-fit max-w-screen-lg flex flex-col p-4">
             <h1 class="text-4xl mx-auto">Projects</h1>
-            <!-- Anilist Discord Bot project card -->
-            <div class="flex flex-col sm:flex-row mt-10 bg-black/30">
-                <img class="object-cover w-full mx-auto  sm:w-[400px] h-auto sm:h-[250px] p-2" src="./static/images/DiscordBotDemo.gif">
-                <div class="flex flex-col w-full p-2">
-                    <p class="text-4xl border-white border-b-2">Anilist Discord Bot</p>
-                    <p class="py-2">Developed an Anilist Discord bot which leverages Anilist's public facing GraphQL API to allow users to query and compare their favourite anime and manga statistics with other users within any discord server. The bot also allows users to create collages of their top rated media's cover arts using Go's image processing libraries.</p>
-                    <div class="flex flex-row gap-1 mt-auto w-full">
-                        <img class="size-10" title="Golang" alt="Golang logo" src="./static/images/Go.png">
-                        <img class="size-10" title="RaspberryPi" alt="RaspberryPi logo" src="./static/images/RaspberryPi.png">
-                        <img class="size-10" title="GraphQL" alt="GraphQL logo" src="./static/images/GraphQL.png">
-                        <img class="size-10" title="SQLite" alt="SQLite logo" src="./static/images/SQLite.png">
-                        <a target="_blank" class="ml-auto" href="https://github.com/JRoegit/DiscordBot"><img class="size-10 " title="GitHub" alt="GitHub logo" src="./static/images/githublogo.png"></a>
-                    </div>
-                </div>
-            </div>
-            <!-- Mock Flight Booking Web App project card -->
-            <div class="flex flex-col sm:flex-row mt-10 bg-black/30">
-                <img class="object-cover w-full mx-auto sm:w-[400px] h-auto sm:h-[250px] p-2" src="./static/images/FlightDemo.png">
-                <div class="flex flex-col w-full p-2">
-                    <p class="text-4xl border-white border-b-2">Mock Flight Booking Web App</p>
-                    <p class="py-2">Lead the development of a mock flight booking service website where users can search, book and pay for flights. GitHub repository is private for academic integrity reasons.</p>
-                    <div class="flex flex-row gap-1 mt-auto w-full">
-                        <img class="size-10" title="JavaScript" alt="JavaScript logo" src="./static/images/JavaScript.png">
-                        <img class="size-10" title="HTML5" alt="HTML5 logo" src="./static/images/HTML5.png">
-                        <img class="size-10" title="Python" alt="Python logo" src="./static/images/Python.png">
-                        <img class="size-10" title="Flask" alt="Flask logo" src="./static/images/Flask.png">
-                        <img class="size-10" title="TailwindCSS" alt="TailwindCSS logo" src="./static/images/TailwindCSS.png">
-                        <img class="size-10" title="Git" alt="Git logo" src="./static/images/Git.png">
-                        <img class="size-10" title="SQLite" alt="SQLite logo" src="./static/images/SQLite.png">
-                        <a target="_blank" class="ml-auto" href="https://www.figma.com/design/F7OFF43JPwpJVcKkctEGCJ/Group-47-A1?node-id=0-1&t=mBFVraXE36AtNjTM-1"><img class="size-10" title="Figma" alt="Figma logo" src="./static/images/Figma.png"></a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fortnite project card -->
-            <div class="flex flex-col sm:flex-row mt-10 bg-black/30">
-                <img class="object-cover w-full mx-auto sm:w-[400px] h-auto sm:h-[250px] p-2" src="./static/images/UefnDemo.gif">
-                <div class="flex flex-col w-full p-2">
-                    <p class="text-4xl border-white border-b-2">UGC Game Developer (Fortnite)</p>
-                    <p class="py-2">Actively developing unique and novel game experiences for Fortnite creative. Designing and developing game mechanics and UI through Verse with a focus on object oriented principles and design.</p>
-                    <div class="flex flex-row gap-1 mt-auto w-full">
-                        <img class="size-10" title="UnrealEngine" alt="UnrealEngine logo" src="./static/images/unrealengine.png">
-                        <img class="size-10" title="Verse" alt="Verse logo" src="./static/images/Verse.png">
-                        <img class="size-10" title="Figma" alt="Figma logo" src="./static/images/Figma.png">
-                        <img class="size-10" title="Blender" alt="Blender logo" src="./static/images/blender.png">
-                        <img class="size-10" title="GIMP" alt="GIMP logo" src="./static/images/GIMP.png">
-                    </div>
-                </div>
-            </div>
+
             <!-- Artist Portfolio Website project card -->
             <div class="flex flex-col sm:flex-row mt-10 bg-black/30">
                 <img class="object-cover w-full mx-auto sm:w-[400px] h-auto sm:h-[250px] p-2" src="./static/images/UefnDemo.gif">
@@ -103,6 +55,58 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Anilist Discord Bot project card -->
+            <div class="flex flex-col sm:flex-row mt-10 bg-black/30">
+                <img class="object-cover w-full mx-auto  sm:w-[400px] h-auto sm:h-[250px] p-2" src="./static/images/DiscordBotDemo.gif">
+                <div class="flex flex-col w-full p-2">
+                    <p class="text-4xl border-white border-b-2">Anilist Discord Bot</p>
+                    <p class="py-2">Developed an Anilist Discord bot which leverages Anilist's public facing GraphQL API to allow users to query and compare their favourite anime and manga statistics with other users within any discord server. The bot also allows users to create collages of their top rated media's cover arts using Go's image processing libraries.</p>
+                    <div class="flex flex-row gap-1 mt-auto w-full">
+                        <img class="size-10" title="Golang" alt="Golang logo" src="./static/images/Go.png">
+                        <img class="size-10" title="RaspberryPi" alt="RaspberryPi logo" src="./static/images/RaspberryPi.png">
+                        <img class="size-10" title="GraphQL" alt="GraphQL logo" src="./static/images/GraphQL.png">
+                        <img class="size-10" title="SQLite" alt="SQLite logo" src="./static/images/SQLite.png">
+                        <a target="_blank" class="ml-auto" href="https://github.com/JRoegit/DiscordBot"><img class="size-10 " title="GitHub" alt="GitHub logo" src="./static/images/githublogo.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mock Flight Booking Web App project card -->
+            <div class="flex flex-col sm:flex-row mt-10 bg-black/30">
+                <img class="object-cover w-full mx-auto sm:w-[400px] h-auto sm:h-[250px] p-2" src="./static/images/FlightDemo.png">
+                <div class="flex flex-col w-full p-2">
+                    <p class="text-4xl border-white border-b-2">Mock Flight Booking Web App</p>
+                    <p class="py-2">Lead the development of a mock flight booking service website where users can search, book and pay for flights. GitHub repository is private for academic integrity reasons.</p>
+                    <div class="flex flex-row gap-1 mt-auto w-full">
+                        <img class="size-10" title="JavaScript" alt="JavaScript logo" src="./static/images/JavaScript.png">
+                        <img class="size-10" title="HTML5" alt="HTML5 logo" src="./static/images/HTML5.png">
+                        <img class="size-10" title="Python" alt="Python logo" src="./static/images/Python.png">
+                        <img class="size-10" title="Flask" alt="Flask logo" src="./static/images/Flask.png">
+                        <img class="size-10" title="TailwindCSS" alt="TailwindCSS logo" src="./static/images/TailwindCSS.png">
+                        <img class="size-10" title="Git" alt="Git logo" src="./static/images/Git.png">
+                        <img class="size-10" title="SQLite" alt="SQLite logo" src="./static/images/SQLite.png">
+                        <a target="_blank" class="ml-auto" href="https://www.figma.com/design/F7OFF43JPwpJVcKkctEGCJ/Group-47-A1?node-id=0-1&t=mBFVraXE36AtNjTM-1"><img class="size-10" title="Figma" alt="Figma logo" src="./static/images/Figma.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fortnite project card -->
+            <div class="flex flex-col sm:flex-row mt-10 bg-black/30">
+                <img class="object-cover w-full mx-auto sm:w-[400px] h-auto sm:h-[250px] p-2" src="./static/images/UefnDemo.gif">
+                <div class="flex flex-col w-full p-2">
+                    <p class="text-4xl border-white border-b-2">UGC Game Developer (Fortnite)</p>
+                    <p class="py-2">Actively developing unique and novel game experiences for Fortnite creative. Designing and developing game mechanics and UI through Verse with a focus on object oriented principles and design.</p>
+                    <div class="flex flex-row gap-1 mt-auto w-full">
+                        <img class="size-10" title="UnrealEngine" alt="UnrealEngine logo" src="./static/images/unrealengine.png">
+                        <img class="size-10" title="Verse" alt="Verse logo" src="./static/images/Verse.png">
+                        <img class="size-10" title="Figma" alt="Figma logo" src="./static/images/Figma.png">
+                        <img class="size-10" title="Blender" alt="Blender logo" src="./static/images/blender.png">
+                        <img class="size-10" title="GIMP" alt="GIMP logo" src="./static/images/GIMP.png">
+                    </div>
+                </div>
+            </div>
+            
             
         </section>
 
@@ -110,17 +114,36 @@
         <section id="aboutme" class="w-full h-fit max-w-screen-lg flex flex-col p-4">
             <h1 class="text-4xl mx-auto">About Me</h1>
             <div class="flex flex-col sm:flex-row-reverse gap-4 my-10 "> 
-                <img class="mx-auto object-contain size-80 border-white border-2" src="./static/images/me.png">
+                <img class="mx-auto object-contain size-60 border-white border-2" src="./static/images/me.png">
                 <div class="flex flex-col gap-4 mx-auto">
                     <p class="text-center sm:text-left">Hey, I'm Jacob! I'm a third year computer science student specializing in software design at Queen's University with a passion for networking, backend systems, and game development.</p>
-                    <p class="text-center sm:text-left">Right now, I'm learning about network layers and all of the underlying protocols that make the internet go round. Im taking on related projects like a DNS resolver in Go to solidify my understanding of different principles and protocols.</p>
+                    <p class="text-center sm:text-left">Right now, I'm learning about network layers and all of the underlying protocols that make the internet go round. Im taking on related projects like a DNS resolver in Go to solidify my understanding of different principles and the various protocols that are involved in these services that are taken for granted.</p>
                 </div>
             </div>
         </section>
 
         <div class="w-full max-w-screen-lg border-white border-b-2"></div>
-        <section id="contact" class="w-full h-screen max-w-screen-lg flex flex-col p-4">
+        <section id="contact" class="w-full h-fit max-w-screen-lg flex flex-col p-4">
             <h1 class="text-4xl mx-auto">Contact</h1>
+            <div class="flex flex-col mx-auto mt-10 bg-black/30 w-full sm:w-1/2 p-2">
+                <h1 class="text-2xl">Get in Touch</h1>
+                <form class="flex flex-col gap-2" action="https://formspree.io/f/mvgzjlyq" method="post">
+                    <label>
+                        Your email:
+                        <input class="border-2 w-full border-black/30 bg-gray-50 text-black p-1" placeholder="example@abc.com" type="email" name="email">
+                    </label>
+                    <label>
+                        Your message:
+                        <textarea class="border-2 w-full border-black/30 bg-gray-50 text-black p-1" placeholder="Hello world!" name="message"></textarea>
+                    </label>
+                    <button class="px-4 py-2 bg-white text-black font-semibold hover:bg-gray-300 hover:cursor-pointer" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="flex flex-row gap-2 mx-auto mt-2">
+                <a target="_blank" href="https://www.linkedin.com/in/jacroe/"><img src="./static/images/LinkedIn.png" class="size-10" title="LinkedIn" alt="LinkedIn Icon"></a>
+                <a target="_blank" href="https://github.com/JRoegit"><img src="./static/images/githublogo.png" class="size-10" title="GitHub" alt="GitHub Icon"></a>
+                <a target="_blank" href="mailto:jacobroe@rogers.com"><img src="./static/images/Email.png" class="size-10" title="Email" alt="Email icon"></a>
+            </div>
         </section>
     </div>
 </body>
