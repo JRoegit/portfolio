@@ -7,7 +7,7 @@
     <title>Jacob Roe</title>
 </head>
 <script src="./scripts/script.js"></script>
-<body class="bg-mainblack text-white font-serif">
+<body class="bg-mainblack text-white font-serif ">
     <!-- CONTENT CONTAINER -->
     <nav class="fixed mt-0 top-0 z-50 w-full  h-14  backdrop-blur-sm">
         <div class="w-full h-full mx-auto flex flex-row-reverse max-w-screen-lg gap-6 p-4">
@@ -23,9 +23,9 @@
             <div class="w-3/4 m-auto flex flex-col">
                 <div class="text-center text-xl">Hey, I'm Jacob - a CS student with a passion for networks and backend systems</div>
                 <div class="py-5 flex flex-row mx-auto gap-2">
-                    <button class="px-3 py-2 bg-white text-stone-950 font-semibold hover:bg-gray-300 hover:cursor-pointer " onclick="scrollToSection('projects')">Projects</button>
-                    <button class="px-3 py-2 bg-white text-stone-950 font-semibold hover:bg-gray-300 hover:cursor-pointer " onclick="scrollToSection('aboutme')">About</button>
-                    <button class="px-3 py-2 bg-white text-stone-950 font-semibold hover:bg-gray-300 hover:cursor-pointer " onclick="scrollToSection('contact')">Contact</button>
+                    <button class="px-3 py-2 bg-white text-stone-950 font-semibold hover:bg-gray-400 hover:cursor-pointer transition-all ease-in-out duration-300" onclick="scrollToSection('projects')">Projects</button>
+                    <button class="px-3 py-2 bg-white text-stone-950 font-semibold hover:bg-gray-400 hover:cursor-pointer transition-all ease-in-out duration-300" onclick="scrollToSection('aboutme')">About</button>
+                    <button class="px-3 py-2 bg-white text-stone-950 font-semibold hover:bg-gray-400 hover:cursor-pointer transition-all ease-in-out duration-300" onclick="scrollToSection('contact')">Contact</button>
                 </div>
             </div>
         </section>
@@ -33,6 +33,32 @@
         <div class="w-full max-w-screen-lg border-white border-b-2"></div>
         <section id="projects" class="w-full h-fit max-w-screen-lg flex flex-col p-4">
             <h1 class="text-4xl mx-auto">Projects</h1>
+
+            <div class="flex flex-col sm:flex-row mt-10 bg-black/30">
+                <img class="object-cover w-full mx-auto sm:w-[400px] h-auto sm:h-[250px] p-2" src="./static/images/RRDesignsDemo.gif">
+                <div class="flex flex-col w-full p-2">
+                    <div class="flex flex-row border-white  border-b-2 w-full">
+                        <p class="text-4xl ">Local Business Website</p>
+                        <a target="_blank" href="https://rr-designs.vercel.app/" class="ml-auto">
+                            <img src="./static/images/externallink.png" class="size-10 ml-auto"/>
+                        </a>
+                    </div>
+                    <p class="py-2">Designing and developing a website for a local business to aide with their online presence and image. This includes a dashboard to allow the business owner to upload and manage the products that are being displayed on the website.</p>
+                    <div class="flex flex-row gap-1 mt-auto w-full">
+                        <img class="size-10" title="NextJS" alt="NextJS logo" src="./static/images/Next.js.png">
+                        <img class="size-10" title="React" alt="React logo" src="./static/images/React.png">
+                        <img class="size-10" title="PostGresSQL" alt="PostGresSQL logo" src="./static/images/PostgresSQL.png">
+                        <img class="size-10" title="SupaBase" alt="SupaBase logo" src="./static/images/supabaselogo.png">
+                        <img class="size-10" title="TypeScript" alt="TypeScript logo" src="./static/images/TypeScript.png">
+                        <img class="size-10" title="TailwindCSS" alt="TailwindCSS logo" src="./static/images/TailwindCSS.png">
+                        <img class="size-10" title="PostMan" alt="PostMan logo" src="./static/images/Postman.png">
+                        <!-- <img class="size-10" title="" alt=" logo" src="./static/images/"> -->
+                        <img class="size-10" title="AWS" alt="AWS logo" src="./static/images/AWS.png">
+                        <img class="size-10" title="Figma" alt="Figma logo" src="./static/images/Figma.png">
+                        <a target="_blank" class="ml-auto" href="https://github.com/JRoegit/RRDesigns"><img class="size-10 " title="GitHub" alt="GitHub logo" src="./static/images/githublogo.png"></a>
+                    </div>
+                </div>
+            </div>
 
             <!-- Artist Portfolio Website project card -->
             <div class="flex flex-col sm:flex-row mt-10 bg-black/30">
